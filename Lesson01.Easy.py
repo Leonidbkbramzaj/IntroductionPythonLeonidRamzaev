@@ -16,7 +16,7 @@ while number > 0:
     number = number // 10
 
 else:
-    print("finished")
+    print("Цикл завершен")
 
 
 
