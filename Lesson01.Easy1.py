@@ -16,9 +16,8 @@ print("И меняем местами")
 
 
 i = a
-d = b
+a = b
 
-a = d
 b = i
 
 print(a)
