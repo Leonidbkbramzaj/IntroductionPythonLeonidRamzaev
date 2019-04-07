@@ -1,35 +1,25 @@
+# Задача-2:
+# Даны два произвольные списка.
+# Удалите из первого списка элементы, присутствующие во втором списке.
 
-# Задача-1:
-# Дан список фруктов.
-# Напишите программу, выводящую фрукты в виде нумерованного списка,
-# выровненного по правой стороне.
+rate = [2, 5, 6, 7, 4, 9]
+index = [5, 6, 8, 9, 12]
 
-# Пример:
-# Дано: ["яблоко", "банан", "киви", "арбуз"]
-# Вывод:
-# 1. яблоко
-# 2.  банан
-# 3.   киви
-# 4.  арбуз
 
-# Подсказка: воспользоваться методом .format()
+crosslist = set(rate).intersection(index)
 
-#1
+print(crosslist)
 
-fruits = ["яблоко", "банан", "киви", "арбуз", "Дыня"]
+print("deleting elements....")
 
-print("1. {0:>10}".format(*fruits))
-print("2. {1:>10}".format(*fruits))
-print("3. {2:>10}".format(*fruits))
-print("4. {3:>10}".format(*fruits))
+print("the elements,", str(crosslist),  "have been deleted")
 
-number = 0
+for i in rate[:]:
+    if i in index:
+     rate.remove(i)
+print(rate)
 
-#2
-for i in fruits:
-    item_fruit = ("{0:>10}".format(i))
-    number = number + 1
-    print(str(number)+".", item_fruit)
 
-# The first part of the code is for understanding the format functon
-# The second part of the code is the solution prepared usinf for loop
+
+
+
